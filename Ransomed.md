@@ -3,12 +3,13 @@
 ## create a new user
 Code: sudo useradd Tobi
 **Screenshot of the user add process below;**
-![Sudo Useradd Tobi] (/Screen%20Shot%20Vagrantfile%20useradd%202023-08-18%20at%205.58.00%20PM.png)
+![Sudo Useradd Tobi](/ScreenShot_Vagrantfile_useradd.png)
+
 
 ## set an expiry date of 2weeks for the user
 code: sudo usermod -e $(date -d "+2 weeks" +%Y-%m-%d) Tobi
 **Screenshot of set an expiry date of 2weeks for the user**
-![Sudo set an expiry date Tobi!](/set%20an%20expiry%20date%20of%202weeks%20for%20the%20user.png "Sudo expiry date set for Tobi")
+![Sudo set an expiry date Tobi](/SS_Expirydate_Tobi.png "Sudo expiry date set for Tobi")
 
 ## prompt the user to change there password on login
 code: sudo chage -d 0 Tobi
