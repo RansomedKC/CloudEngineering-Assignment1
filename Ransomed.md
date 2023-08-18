@@ -2,24 +2,29 @@
 
 ## create a new user
 Code: sudo useradd Tobi
+
 **Screenshot of the user add process below;**
+I had to create a new link for the images on Git directly because the initial screenshot link kept generating errors. However the screenshots below in the respective questions shows the process and commands/codes.
 ![ScreenShot_Vagrantfile_useradd](https://github.com/RansomedKC/CloudEngineering-Assignment1/assets/137722760/adb87429-a12a-4938-b2b3-f577b65fd577)
 
 ## set an expiry date of 2weeks for the user
 code: sudo usermod -e $(date -d "+2 weeks" +%Y-%m-%d) Tobi
+
 **Screenshot of set an expiry date of 2weeks for the user**
-![Sudo set an expiry date Tobi](/SS_Expirydate_Tobi.png "Sudo expiry date set for Tobi")
+![SS_Expirydate_Tobi](https://github.com/RansomedKC/CloudEngineering-Assignment1/assets/137722760/597a800d-5a6e-4282-bdc9-b688d5db80bc)
 
 ## prompt the user to change there password on login
 code: sudo chage -d 0 Tobi
+
 **Screenshot change passwd**
-![prompt the user to change there password on login!](/Screen%20Shot%202023-08-18%20Change%20passed%20at%206.57.18%20PM.png "Sudo change passwd")
+![Screen Shot 2023-08-18 Change passed at 6 57 18 PM](https://github.com/RansomedKC/CloudEngineering-Assignment1/assets/137722760/8c675f05-d052-4375-bd75-9a8779148848)
 
 
 ## attach the user to a group called altschool
 code: sudo usermod -aG altschool Tobi
+
 **Screenshot attach the user to a group called altschool!**
-![attach the user to a group called altschool!](/Screen%20Shot%202023-08-18%20attach%20the%20user%20to%20a%20group%20called%20altschoolat%207.01.30%20PM.png"attach the user to a group called altschool")
+![Screen Shot 2023-08-18 attach the user to a group called altschoolat 7 01 30 PM](https://github.com/RansomedKC/CloudEngineering-Assignment1/assets/137722760/fcaf7181-18c4-4bb7-ba26-c0918c3e6ab7)
 
 ## allow altschool group to be able to run only cat command on /etc/
 Steps
@@ -31,11 +36,14 @@ code: **%altschool ALL=(ALL) /bin/cat /etc/***
 All of the "altschool" group now have the right to run only the **cat** command on files within the **/etc/** directory using sudo privileges.
 
 **Screenshot allow altschool group to be able to run only cat command on /etc/**
-![allow altschool group to be able to run only cat command!](/Screen%20Shot%202023-08-18%20allow%20altschool%20group%20to%20be%20able%20to%20run%20only%20cat%20command%20on%20%3Aetc%3A%201%20at%207.16.13%20PM.png "allow altschool group to be able to run only cat command")
-![allow altschool group to be able to run only cat command2!](/Screen%20Shot%202023-08-18%20allow%20altschool%20group%20to%20be%20able%20to%20run%20only%20cat%20command%20on%20%3Aetc%3A%202%20at%207.18.08%20PM.png "allow altschool group to be able to run only cat command2")
+![Screen Shot 2023-08-18 allow altschool group to be able to run only cat command on :etc: 1 at 7 16 13 PM](https://github.com/RansomedKC/CloudEngineering-Assignment1/assets/137722760/a46c4b8f-eb1a-4de3-8dea-382f62f21b2e)
+
+![Screen Shot 2023-08-18 allow altschool group to be able to run only cat command on :etc: 2 at 7 18 08 PM](https://github.com/RansomedKC/CloudEngineering-Assignment1/assets/137722760/d08fa322-decf-4a50-bf27-9dcf642a1d99)
+
 
 
 ## create another user. make sure that this user doesn't have a home directory.
  code: sudo useradd -M Kavod
- **Screenshot create another user. make sure that this user doesn't have a home directory**
- ![create another user. make sure that this user doesn't have a home directory!](/Screen%20Shot%202023-08-18%20create%20another%20user.%20make%20sure%20that%20this%20user%20doesn't%20have%20a%20home%20directory%20at%207.27.38%20PM.png "create another user. make sure that this user doesn't have a home directory")
+
+**Screenshot create another user. make sure that this user doesn't have a home directory**
+ ![Screen Shot 2023-08-18 create another user  make sure that this user doesn't have a home directory at 7 27 38 PM](https://github.com/RansomedKC/CloudEngineering-Assignment1/assets/137722760/e94c17e4-3e34-4641-8837-7d99fb276a53)
