@@ -3,8 +3,7 @@
 ## create a new user
 Code: sudo useradd Tobi
 **Screenshot of the user add process below;**
-![Sudo Useradd Tobi](/ScreenShot_Vagrantfile_useradd.png)
-
+![ScreenShot_Vagrantfile_useradd](https://github.com/RansomedKC/CloudEngineering-Assignment1/assets/137722760/adb87429-a12a-4938-b2b3-f577b65fd577)
 
 ## set an expiry date of 2weeks for the user
 code: sudo usermod -e $(date -d "+2 weeks" +%Y-%m-%d) Tobi
