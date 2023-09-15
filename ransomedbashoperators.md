@@ -1,4 +1,9 @@
-Certainly! Here are the 30 important Bash operators with their 
+AltSchool Assignment Number 2 from Tutor Madu Valentine
+
+Question: Write out 15 bash operators with explanations and push to your git repository
+
+Answer: Instead of providing only 15 bash operators, in other to enable me 
+practice more, I have gone further to  clearly write out 30 important Bash operators with their 
 functions explained and written 
 out in code format:
 
